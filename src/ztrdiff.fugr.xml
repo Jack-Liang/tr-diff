@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>function group ZTRDIFF</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZTRDIFFTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZTRDIFF</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZTRDIFF_SERIALIZE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Serialize TADIR object list via abapGit into ZIP for cross-system TR compa</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_ITEMS</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LANGU</PARAMETER>
+       <DEFAULT>&apos;E&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>LANGU</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_ZIP</PARAMETER>
+       <TYP>XSTRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_INFO</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_ITEMS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LANGU</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ZIP</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_INFO</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
